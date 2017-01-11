@@ -3,7 +3,7 @@
 
 ``` sh
 cd ~/.config
-git clone git@github.com:jgermade/shell.git
+git clone git@github.com:jgermade/sh.git
 ```
 
 > zsh
