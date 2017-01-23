@@ -1,0 +1,25 @@
+[user]
+    name = Jesús Germade
+    email = jesus@germade.es
+[push]
+    default = current
+[pull]
+    default = current
+[alias]
+    ss = status
+    ch = diff .
+    ff = diff .
+    cc = checkout
+    mm = commit -m 
+    mmn = commit -n -m
+    mma = commit -a -m
+    cc = checkout
+    cm = checkout master
+    pm = pull origin master
+    aa = add --all
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    last = log -1 HEAD
+    co = "commit -m "
+    undo-commit = "reset --soft HEAD~1"
+[merge]
+    tool = meld
