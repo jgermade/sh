@@ -10,6 +10,7 @@
     ch = diff .
     ff = diff .
     cc = checkout
+    amm = commit --amend -m 
     mm = commit -m 
     mmn = commit -n -m
     mma = commit -a -m
