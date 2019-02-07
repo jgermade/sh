@@ -51,11 +51,3 @@ function nginx-errors () {
     fi
   fi
 }
-
-function code () {
-  if [ -z "$1" ]; then         # Is parameter #1 zero length?
-    subl -n .
-  else
-  	subl -n $1
-  fi
-}
