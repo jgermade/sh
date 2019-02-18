@@ -1,0 +1,13 @@
+default  partial alphanumeric_keys
+xkb_symbols "basic" {
+
+   name[Group1]= "Epañol (R_Control as Menu)";
+
+   include "es(altgr-intl)"
+
+// my custom changes:
+
+   key <RCTL> { [        Menu      ] };
+
+   include "level3(ralt_switch)"
+};
