@@ -1,5 +1,5 @@
 # ====================CONFIG THIS =============================== #
-COLOR_01="#000000"           # HOST
+COLOR_01="#999999"           # HOST
 COLOR_02="#BF4040"           # SYNTAX_STRING
 COLOR_03="#73D216"           # COMMAND
 COLOR_04="#FFE715"           # COMMAND_COLOR2
@@ -8,7 +8,7 @@ COLOR_06="#F82A71"           # SYNTAX_VAR
 COLOR_07="#68D3F1"           # PROMP
 COLOR_08="#F8F8F8"           #
 
-COLOR_09="#74705D"           #
+COLOR_09="#AAAAAA"           #
 COLOR_10="#EF2929"           # COMMAND_ERROR
 COLOR_11="#8AE234"           # EXEC
 COLOR_12="#FCE94F"           #

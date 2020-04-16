@@ -21,8 +21,13 @@ function git_current_branch() {
     fi
 }
 
-PROMPT='%{$fg_bold[green]%}%p %{$fg[yellow]%}%~ %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%}%{$fg_bold[white]%}➤ %{$reset_color%}'
- 
+# PROMPT='%{$fg_bold[green]%}%p %{$fg[yellow]%}%~%{$fg_bold[white]%} ➤ %{$reset_color%}'
+# RPROMPT='%{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%}%{$reset_color%}'
+
+PROMPT='%{$reset_color%}%{$fg_bold[green]%}%p %{$fg[yellow]%}%~ %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%}%{$fg_bold[white]%}➤ %{$reset_color%}'
+
+RPROMPT='%{$reset_color%}%{$fg[black]%}%D %T%{$reset_color%}'
+
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$bg[blue]%}%{$fg[white]%} "
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg_bold[yellow]%}⚡ %{$reset_color%} "
