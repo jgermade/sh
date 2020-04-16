@@ -1,6 +1,6 @@
 # ====================CONFIG THIS =============================== #
 COLOR_01="#999999"           # HOST
-COLOR_02="#BF4040"           # SYNTAX_STRING
+COLOR_02="#FF3C3C"           # SYNTAX_STRING
 COLOR_03="#73D216"           # COMMAND
 COLOR_04="#FFE715"           # COMMAND_COLOR2
 COLOR_05="#3465A4"           # PATH
@@ -9,7 +9,7 @@ COLOR_07="#68D3F1"           # PROMP
 COLOR_08="#F8F8F8"           #
 
 COLOR_09="#AAAAAA"           #
-COLOR_10="#EF2929"           # COMMAND_ERROR
+COLOR_10="#FF2525"           # COMMAND_ERROR
 COLOR_11="#8AE234"           # EXEC
 COLOR_12="#FCE94F"           #
 COLOR_13="#729FCF"           # FOLDER
