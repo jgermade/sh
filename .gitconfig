@@ -14,7 +14,7 @@
     cp = cherry-pick
     mm = commit -m 
     mmn = commit -n -m
-    mma = commit -a -m
+    mma = commit --amend -m
     pm = pull origin master
     aa = add --all
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
@@ -24,7 +24,7 @@
 [merge]
     tool = meld
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
