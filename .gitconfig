@@ -1,6 +1,7 @@
 [user]
     name = Jesús Germade
-    email = jesus@germade.es
+    email = jesus@germade.dev
+    signingkey = 29D5731A4AA6D1C4
 [push]
     default = current
 [pull]
@@ -12,7 +13,8 @@
     cc = checkout
     cm = checkout master
     cp = cherry-pick
-    mm = commit -m 
+    mm = commit -m
+    mms = commit -S -m
     mmn = commit -n -m
     mma = commit --amend -m
     pm = pull origin master
