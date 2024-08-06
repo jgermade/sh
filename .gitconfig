@@ -11,7 +11,8 @@
     ch = diff .
     ff = diff .
     cc = checkout
-    cm = checkout master
+    default-remote = "!f() { git symbolic-ref refs/remotes/origin/HEAD --short | sed 's@^origin/@@'; }; f"
+    cm = "!f() { git checkout $(git default-remote); }; f"
     cp = cherry-pick
     mm = commit -m
     mms = commit -S -m

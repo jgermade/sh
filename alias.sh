@@ -18,6 +18,8 @@ alias gc='git checkout'
 alias gb='git branch'
 alias fetch='git fetch origin'
 
+alias default-remote="git symbolic-ref refs/remotes/origin/HEAD --short | sed 's@^origin/@@'"
+
 alias pull='echo "Pulling from branch: $(git symbolic-ref --short HEAD)" && git pull origin $(git symbolic-ref --short HEAD)'
 alias push='echo "Pushing to branch: $(git symbolic-ref --short HEAD)" && git push origin $(git symbolic-ref --short HEAD)'
 
