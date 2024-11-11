@@ -53,3 +53,12 @@ function nginx-errors () {
     fi
   fi
 }
+
+if [ -d "${HOME}/.nvm/.git" ]; then
+cd () {
+  builtin cd "$@"
+  if [[ -f .nvmrc ]];then nvm use > /dev/null; fi
+}
+fi
+
+cd .
