@@ -59,6 +59,6 @@ cd () {
   builtin cd "$@"
   if [[ -f .nvmrc ]];then nvm use > /dev/null; fi
 }
-fi
 
 cd .
+fi
