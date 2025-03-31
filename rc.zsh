@@ -4,9 +4,9 @@ autoload -U colors && colors
 source "$(dirname "$0")"/alias.sh
 
 function git_dirty_symbol () {
-  local pstatus=$(git status --porcelain 2> /dev/null)
+  local git_status=$(git status --porcelain 2> /dev/null)
 
-  if [[ -z $pstatus ]];then
+  if [[ -z $git_status ]];then
     echo ''
   else
     echo ' ⚡'
