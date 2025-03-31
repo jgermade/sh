@@ -53,16 +53,3 @@ function nginx-errors () {
     fi
   fi
 }
-
-if [ -d "${HOME}/.nvm/.git" ]; then
-echo "nvm found"
-
-cd () {
-  builtin cd "$@"
-  if [[ -f .nvmrc ]];then nvm use > /dev/null; echo "node: $(node -v)"; fi
-}
-
-cd .
-else
-echo "nvm not found"
-fi
