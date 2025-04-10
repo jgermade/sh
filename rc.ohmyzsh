@@ -9,7 +9,7 @@ colors
 
 source "$(dirname "$0")"/alias.sh
 source "$(dirname "$0")"/paths.sh
-source "$(dirname "$0")"/transfer.sh
+# source "$(dirname "$0")"/transfer.sh
 
 
 function git_current_branch() {
@@ -30,8 +30,7 @@ ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg_bold[yellow]%}⚡"
 ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg[white]%}✓"
 
 # custom tab name
-function precmd {
-  
+function precmd { 
   if [[ `uname` == 'Darwin' ]]
   then
     echo -ne "\e]1;${PWD//*\//} $(git_prompt_info)\a"
@@ -41,12 +40,12 @@ function precmd {
 }
 
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
+# if [ -d "$HOME/bin" ] ; then
+#    PATH="$HOME/bin:$PATH"
+# fi
 
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/.local/bin" ] ; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
+# if [ -d "$HOME/.local/bin" ] ; then
+#    PATH="$HOME/.local/bin:$PATH"
+# fi
 
