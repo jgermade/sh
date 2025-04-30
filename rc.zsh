@@ -27,15 +27,8 @@ setopt prompt_subst
 
 prompt=' %F{yellow}%~%F{reset}$(git_branch_name) ▸ '
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
-
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/.local/bin" ] ; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
+source "$(dirname "$0")"/alias.sh
+source "$(dirname "$0")"/paths.sh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
